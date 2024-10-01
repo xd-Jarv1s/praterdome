@@ -2,8 +2,8 @@ import json
 import requests
 
 # Define your Telegram bot token and chat ID
-TOKEN = '7162097876:AAE27cvUGt6tUzuX3NI9VoNnoUsbNYYnBUM'
-CHAT_ID = '-1002394818890'
+TOKEN = '[YOUR BOT TOKEN]'
+CHAT_ID = '[YOUR CHANNEL/CHAT ID]'
 
 # List to keep track of already sent events
 sent_events = {}
