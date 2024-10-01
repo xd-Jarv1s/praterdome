@@ -1,6 +1,5 @@
 import scrapy
 
-
 class PraterDomeSpider(scrapy.Spider):
     name = 'myspider'
     start_urls = [
@@ -32,6 +31,10 @@ class PraterDomeSpider(scrapy.Spider):
             image_link = event.xpath('.//div[@class="thumbnail"]/a/@href').get()
             event_link = response.urljoin(image_link) if image_link else 'No link available'
 
+            # Extract event image source
+            image_src = event.xpath('.//div[@class="thumbnail"]/a/img/@src').get()
+            image_src = response.urljoin(image_src) if image_src else 'No image available'
+
             # Extract event title
             title = event.xpath('.//h4[@class="title"]/a/text()').get().strip() if event.xpath(
                 './/h4[@class="title"]/a/text()').get() else 'No title'
@@ -40,7 +43,8 @@ class PraterDomeSpider(scrapy.Spider):
             event_data = {
                 'event_link': event_link,
                 'date': date,
-                'location': location
+                'location': location,
+                'image': image_src,  # Add image URL to the event data
             }
 
             # Yield the event data
