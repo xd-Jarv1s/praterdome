@@ -3,9 +3,9 @@ from telethon.tl.functions.messages import GetDialogsRequest
 from telethon.tl.types import InputPeerEmpty
 import json
 
-API_ID = 28870257  # Your API ID
-API_HASH = 'e1438d4646b0028850650fcc9c73b058'  # Your API HASH
-phone = '+421949550035'  # Your phone number
+API_ID =   # Your API ID
+API_HASH = ''  # Your API HASH
+phone = ''  # Your phone number
 
 # Create a new Telegram client
 client = TelegramClient('my-client', API_ID, API_HASH)
