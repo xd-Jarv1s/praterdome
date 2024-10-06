@@ -3,11 +3,11 @@ import asyncio
 from telethon import TelegramClient
 
 # Your API credentials from my.telegram.org
-api_id = '28870257'  # Your API_ID
-api_hash = 'e1438d4646b0028850650fcc9c73b058'  # Your API_HASH
+api_id = ''  # Your API_ID
+api_hash = ''  # Your API_HASH
 
 # Channel ID of the "Praterdome" channel
-channel_id = -1002449490106  # Praterdome channel ID
+channel_id = #-1234567890  # Praterdome channel ID
 
 # File to save all messages
 output_file = 'praterdome_messages.json'
