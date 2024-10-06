@@ -3,8 +3,8 @@ import requests
 from datetime import datetime
 
 # Define your Telegram bot token and chat ID
-TOKEN = '7162097876:AAE27cvUGt6tUzuX3NI9VoNnoUsbNYYnBUM'
-CHAT_ID = '-1002449490106'
+TOKEN = ''
+CHAT_ID = ''
 
 # List to keep track of already sent events
 sent_events = {}
